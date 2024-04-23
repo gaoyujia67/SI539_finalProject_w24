@@ -170,13 +170,6 @@ footer{
 }
 
 
-/* Tablet View */
-@media (min-width: 768px) {
-
-}
-
-
-
 /* Desktop View */
 @media (min-width: 1200px) {
     /* navigation bar */
@@ -202,6 +195,7 @@ footer{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
     }
 
     .pictures{
