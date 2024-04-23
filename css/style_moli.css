@@ -1,0 +1,230 @@
+/* Mobile View */
+/* Hide Skip to Main  */
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px; 
+    height: 1px;
+    overflow: hidden;
+    font-family: monospace;
+}
+
+.skip:hover{
+    background-color: #FECDAA;
+    border: #F7418F 1px solid;
+}
+
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* Navigation Bar Style */
+.navbar{
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F7418F;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 8px;
+    padding: 2px;
+}
+
+nav ul a{
+    font-family: monospace;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    color: #FFEBB2;
+    text-decoration: underline;
+}
+
+.highlight{
+    border: dashed 2px #FFFDD7
+}
+
+/* General Body Style */
+body{
+    background-color: #FFFDD7;
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .neucha-regular {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Page Title */
+h1{
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* main contents */
+h2{
+    font-family: 'Luckiest Guy';
+    font-size: 22px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-family: 'Luckiest Guy';
+    font-size: 16px;
+}
+
+/* Contents */
+.group_img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.group_img img{
+    margin-top: 15px;
+    border: #F7418F solid 1px;
+}
+
+.intro{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Neucha";
+    font-size: 16px;
+}
+
+.image-container{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.image-container img{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.separate-pics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    justify-items: center;
+}
+
+.separate-pics img{
+    max-height: 300px;
+    border: dashed 2px #5755FE;
+    margin-top: 5px;
+}
+
+/* Footer Style */
+footer{
+    margin-top: 60px;
+    font-family: "Neucha";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Tablet View */
+@media (min-width: 768px) {
+    .image-container img{
+        width: 60%;
+        margin-right: 1px;
+    }
+
+    .separate-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0px;
+        justify-items: center;
+    }
+    
+    .separate-pics img{
+        max-height: 300px;
+        border: dashed 2px #5755FE;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+/* Desktop View */
+@media (min-width: 1200px) {
+    /* navigation bar */
+    .navbar ul{
+        justify-content: flex-end;
+    }
+
+    nav ul li{
+        margin: 14px;
+        padding: 6px;
+    }
+
+    nav ul a{
+        font-size: 20px;
+    }
+
+    /* Contents */
+    h2{
+        font-size: 22px;
+        margin-bottom: 5px;
+        border-left: #F7418F solid 10px;
+    }
+
+    .intro{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .group{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        align-items: center;
+    }
+
+    .image-container{
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+    
+    .image-container img{
+        width: 40%;
+        height: auto;
+        margin-right: 1px;
+        border-left: #67C6E3 5px solid;
+        border-top: #67C6E3 3px solid;
+    }
+
+}

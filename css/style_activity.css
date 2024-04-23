@@ -1,0 +1,251 @@
+/* Mobile View */
+/* Hide Skip to Main  */
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px; 
+    height: 1px;
+    overflow: hidden;
+    font-family: monospace;
+}
+
+.skip:hover{
+    background-color: #FECDAA;
+    border: #F7418F 1px solid;
+}
+
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* Navigation Bar Style */
+.navbar{
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F7418F;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 8px;
+    padding: 2px;
+}
+
+nav ul a{
+    font-family: monospace;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    color: #FFEBB2;
+    text-decoration: underline;
+}
+
+.highlight{
+    border: dashed 2px #FFFDD7
+}
+
+/* General Body Style */
+body{
+    background-color: #FFFDD7;
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .neucha-regular {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Page Title */
+h1{
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* main contents */
+h2{
+    font-family: 'Luckiest Guy';
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+h3{
+    font-family: 'Luckiest Guy';
+    font-size: 16px;
+}
+
+/* Contents */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.pictures{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 5px solid #453F78;
+    border-radius: 20%;
+}
+
+.intro{
+    font-family: "Neucha";
+    font-size: 16px;
+    padding: 10px;
+}
+
+#d1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#pic1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#d2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#pic2{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#d3{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#pic3{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#d4{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#pic4{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/* Footer Style */
+footer{
+    margin-top: 60px;
+    font-family: "Neucha";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Tablet View */
+@media (min-width: 768px) {
+
+}
+
+
+
+/* Desktop View */
+@media (min-width: 1200px) {
+    /* navigation bar */
+    .navbar ul{
+        justify-content: flex-end;
+    }
+
+    nav ul li{
+        margin: 14px;
+        padding: 6px;
+    }
+
+    nav ul a{
+        font-size: 20px;
+    }
+
+    /* Contents */
+    h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+    .pictures{
+        width: 325px;
+        height: 225px;
+    }
+
+    #d1{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #pic1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #d2{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    #pic2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    #d3{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+    #pic3{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    #d4{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    
+    #pic4{
+        grid-column: 4;
+        grid-row: 1;
+    }
+}
