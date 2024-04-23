@@ -116,10 +116,10 @@ function largeScreen(){
     
         var img3_l = document.getElementById("img3");
         var div3_l = document.getElementById("div3");
-    
+        
         img3_l.addEventListener("click", function() {
             if (div3_l.style.display === "none") {
-            div3_largeScreen.style.display = "block";
+            div3_l.style.display = "block";
             img3_l.style.gridColumn = 1;
             } else {
             div3_l.style.display = "none";
